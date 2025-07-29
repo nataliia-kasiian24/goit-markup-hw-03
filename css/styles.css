@@ -144,7 +144,7 @@ a{
     padding-top: 120px;
     padding-bottom: 120px;
     display: flex;
-    dap: 24px;
+    gap: 24px;
 }
 .title-two{
     font-weight: 500;
@@ -184,9 +184,7 @@ a{
 .section-three-item{
     background-color: #fff;
 }
-.img-team{
-    
-}
+
 .team-title{
     font-weight: 500;
     font-size: 20px;
