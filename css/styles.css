@@ -6,10 +6,48 @@ body{
 
 ul, ol{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
 }
 
 a{
     text-decoration: none;
+}
+
+/*container*/
+
+.container{
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*heder*/
+.page-header{
+    border-bottom: 1px solid #e7e9fc;
+}
+.heder-container{
+    display: flex;
+    align-items: center;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
 }
 .logo{
     font-family: "Raleway", sans-serif;
@@ -20,7 +58,14 @@ a{
     text-transform: uppercase;
     color: #4d5ae5;
 }
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 .nav-link{
+    display: block;
+    padding: 24px 0;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -31,14 +76,26 @@ a{
 .header-logo .logo-part{
     color: #2e2f42;
 }
+.header-logo{
+    padding: 24px 0;
+    margin-right: 76px;
+}
 .nav-link:hover,
 .nav-link:focus{
     color: #404bbf;
 }
 .address{
     font-style: normal;
+    margin-left: auto;
+}
+.address-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 .address-link{
+    display: block;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -48,11 +105,16 @@ a{
 .address-link:focus{
     color: #404bbf;
 }
+
 /*hero*/
 .section{
     background-color: #2e2f42;
 }
+    
 .section-title{
+    padding: 188px 0;
+    max-width: 496px;
+    margin: 0 auto;
     font-size: 56px;
     line-height: 1.08;
     letter-spacing: 0.02em;
@@ -61,6 +123,10 @@ a{
     line-height: 1.07;
 }
 .transition{
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin:auto
+    align-items: center;
     font-weight: 500;
     background-color: #4d5ae5;
     color: #fff;
@@ -75,6 +141,12 @@ a{
 /*benefits*/
 .section-two-title{
     font-weight: 500;
+}
+.section-two-list{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    dap: 24px;
 }
 .title-two{
     font-weight: 500;
@@ -95,6 +167,8 @@ a{
     background-color: #f4f4fd;
 }
 .section-three-title{
+    padding-top: 120px;
+    padding-bottom: 72px;
     font-weight: 500;
     font-size: 36px;
     line-height: 1.12;
@@ -104,8 +178,16 @@ a{
     line-height: 1.11;
     text-transform: capitalize;
 }
+.section-three-list{
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+}
 .section-three-item{
     background-color: #fff;
+}
+.img-team{
+    
 }
 .team-title{
     font-weight: 500;
