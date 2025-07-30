@@ -28,6 +28,9 @@ ol {
 a{
     text-decoration: none;
 }
+.img{
+    display: block;
+}
 
 /*container*/
 
@@ -61,7 +64,7 @@ a{
 .nav-list{
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 40px;
 }
 .nav-link{
     display: block;
@@ -109,10 +112,10 @@ a{
 /*hero*/
 .section{
     background-color: #2e2f42;
+    padding: 188px 0;
 }
     
 .section-title{
-    padding: 188px 0;
     max-width: 496px;
     margin: 0 auto;
     font-size: 56px;
@@ -121,24 +124,44 @@ a{
     text-align: center;
     color: #fff;
     line-height: 1.07;
+    padding-bottom: 48px;
 }
 .transition{
+    display: block;
     border-radius: 4px;
     padding: 16px 32px;
+    padding-bottom: 188px 0;
     font-weight: 500;
     background-color: #4d5ae5;
     color: #fff;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    margin: 0 auto;
 }
 .transition:hover,
 .transition:focus{
     background-color: #404bbf;
 }
 /*benefits*/
-.section-two-title{
+.section-two{
+    padding: 120px 0;
+}
+.section-two-title, .visually-hidden{
     font-weight: 500;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .section-two-list{
     padding-top: 120px;
@@ -146,12 +169,16 @@ a{
     display: flex;
     gap: 24px;
 }
+.section-two-item{
+    width: calc((100% - 72px) / 4);
+}
 .title-two{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .section-two-text{
     font-weight: 500;
@@ -163,9 +190,9 @@ a{
 /*team*/
 .section-three{
     background-color: #f4f4fd;
+    padding: 120px 0;
 }
 .section-three-title{
-    padding-top: 120px;
     padding-bottom: 72px;
     font-weight: 500;
     font-size: 36px;
@@ -184,6 +211,9 @@ a{
 .section-three-item{
     background-color: #fff;
 }
+.title-text{
+    padding: 32px 0;
+}
 
 .team-title{
     font-weight: 500;
@@ -192,6 +222,7 @@ a{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .profession-text{
     font-size: 16px;
@@ -201,6 +232,10 @@ a{
     color: #434455;
 }
 /*portfolio*/
+.section-four{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .section-four-title{
     font-size: 36px;
     line-height: 1.12;
@@ -210,6 +245,21 @@ a{
     line-height: 1.11;
     text-transform: capitalize;
     font-weight: 500;
+    margin-bottom: 72px;
+}
+.section-four-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.section-four-item{
+    width: calc((100% - 48px) / 3);
+}
+.four-title-text{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .functions-title{
     font-weight: 500;
@@ -217,6 +267,7 @@ a{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .functions-text{
     font-size: 16px;
@@ -227,6 +278,11 @@ a{
 /*footer*/
 .page-footer{
     background-color: #2e2f42;
+    padding: 100px 0;
+}
+.logo, .footer-logo{
+    display: inline-block;
+    padding-bottom: 24px;
 }
 .logo-part-two{
     color: #f4f4fd;
@@ -236,4 +292,5 @@ a{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
