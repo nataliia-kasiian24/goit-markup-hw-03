@@ -28,7 +28,7 @@ ol {
 a{
     text-decoration: none;
 }
-.img{
+img{
     display: block;
 }
 
@@ -193,7 +193,7 @@ a{
     padding: 120px 0;
 }
 .section-three-title{
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-weight: 500;
     font-size: 36px;
     line-height: 1.12;
@@ -210,6 +210,7 @@ a{
 }
 .section-three-item{
     background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
 }
 .title-text{
     padding: 32px 0;
@@ -282,7 +283,7 @@ a{
 }
 .logo, .footer-logo{
     display: inline-block;
-    padding-bottom: 24px;
+    margin-bottom: 16px;
 }
 .logo-part-two{
     color: #f4f4fd;
